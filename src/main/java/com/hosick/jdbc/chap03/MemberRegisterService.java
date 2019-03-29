@@ -8,7 +8,10 @@ public class MemberRegisterService {
 	private MemberDao memberDao;
 
 	static Logger logger = LogManager.getLogger();
-
+	
+	public MemberRegisterService() {
+		
+	}
 	/**
 	 * memberDao를 초기화하는 컨스트럭터
 	 */
