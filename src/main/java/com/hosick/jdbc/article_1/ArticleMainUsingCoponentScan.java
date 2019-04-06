@@ -10,7 +10,7 @@ import com.hosick.jdbc.article.Article;
 public class ArticleMainUsingSpring {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(
+		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"article.xml");
 		ArticleService articleService = context.getBean("articleService",
 				ArticleService.class);
