@@ -1,6 +1,6 @@
 package com.hosick.jdbc.article_1;
-
-import com.hosick.jdbc.article.Article;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * ArticleService를 테스트하는 main
@@ -10,7 +10,7 @@ import com.hosick.jdbc.article.Article;
 public class ArticleMainUsingSpring {
 
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext(
+		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(
 				"article.xml");
 		ArticleService articleService = context.getBean("articleService",
 				ArticleService.class);

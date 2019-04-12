@@ -1,11 +1,12 @@
 package com.hosick.jdbc.article_1;
+
 import java.util.List;
 
 /**
  * Data Access Object.<br>
  * 데이터베이스에 접속해서 데이터를 조작하는 인터페이스.
  * 
- * @author 
+ * @author Jacob
  */
 public interface ArticleDao {
 
